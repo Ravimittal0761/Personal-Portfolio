@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills Grid</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            background-color: bisque;
+            font-family: 'Poppins', sans-serif;
+            
+            color: #fff;
+            margin: 0;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            max-width: 800px;
+        }
+        .grid-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            background-color: #444;
+            border-radius: 10px 10px ;
+            color: whitesmoke;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+        .grid-item img {
+            width: 120px;
+            height: 100px;
+            transition: transform 0.3s ease;
+        }
+        .grid-item h2 {
+            margin-top: 10px;
+            font-size: 18px;
+            transition: opacity 0.3s ease;
+            opacity: 0;
+        }
+        .grid-item:hover {
+            transform: scale(1.1);
+            background-color:yellow;
+        }
+        .grid-item:hover  h1 img {
+            transform: scale(1.2);
+        }
+        .grid-item:hover  h2 {
+            opacity: 1;
+        }
+        h1{color: #000;}
+    </style>
+</head>
+<body>
+    <h1> Skills</h1>
+    <div class="grid">
+        <div class="grid-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React Logo">
+            <h2>React</h2>
+        </div>
+        <div class="grid-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML Logo">
+            <h2>HTML</h2>
+        </div>
+        <div class="grid-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS Logo">
+            <h2>CSS</h2>
+        </div>
+        <div class="grid-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript Logo">
+            <h2>JavaScript</h2>
+        </div>
+        <div class="grid-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Angular_full_color_logo.svg" alt="Angular Logo">
+            <h2>Angular</h2>
+        </div>
+        <div class="grid-item">
+            <img src="php.jpeg" alt="PHP Logo">
+            <h2>PHP</h2>
+        </div>
+        <div class="grid-item">
+            <img src="ionc.png" alt="Ionic Logo">
+            <h2>Ionic</h2>
+        </div>
+        <div class="grid-item">
+            <img src="native.jpeg" alt="Native Script Logo">
+            <h2>Native Script</h2>
+        </div>
+        <div class="grid-item">
+            <img src="c.png" alt="C Logo">
+            <h2>C</h2>
+        </div>
+        <div class="grid-item">
+            <img src="c++.png" alt="DSA Logo">
+            <h2>c++</h2>
+        </div>
+        <div class="grid-item">
+            <img src="dsa.png" alt="DSA Logo">
+            <h2>DSA</h2>
+        </div>
+        
+        <div class="grid-item">
+            <img src="react native.png" alt="DSA Logo">
+            <h2>React native</h2>
+        </div>
+    </div>
+</body>
+</html>
