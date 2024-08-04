@@ -225,6 +225,13 @@ body{
 .container.active .toggle-right{
     transform: translateX(200%);
 }
+header a:hover::before{
+    transform: translateX(0);
+}
+
+header a:hover{
+    color: black;
+}
 
       </style>
       <script>
@@ -243,6 +250,19 @@ loginBtn.addEventListener('click', () => {
   </head>
   
   <body>
+    <header>
+        <nav>
+            <h1>Personal Portfolio</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Projects</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+                <li><a href="skill.html">Skill</a></li>
+            </ul>
+        </nav>
+    </header>
+
   
       <div class="container" id="container">
           <div class="form-container sign-up">
@@ -267,7 +287,7 @@ loginBtn.addEventListener('click', () => {
                   <div class="social-icons">
                       <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
                       <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
-                      <a href="https://www.linkedin.com/in/ravi-mittal-aggarwal" class="icon"><i class="fa-brands fa-github"></i></a>
+                      <a href="https://github.com/Ravimittal0761" class="icon"><i class="fa-brands fa-github"></i></a>
                       <a href="https://www.linkedin.com/in/ravi-mittal-aggarwal" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
                   </div>
                   <span>or use your email password</span>
