@@ -1,354 +1,357 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ravi - Portfolio</title>
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
-  <header>
-    <nav>
-        <h1>
-         Personal Portfolio
-        </h1>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="gallery.html">Projects</a></li>
-            <li><a href="contact.html">Contact Me</a></li>
-            <li><a href="skill.html">Skill</a></li>
-        </ul>
-        <button id="btn">
-            <i class="fa-solid fa-bars"></i>
-        </button>
-    </nav>
-</header>
-
-<!-- Portfolio Header-->
-  <section>
-      <div class="s-container">
-          <div class="content">
-              <span class="subtitle">
-                  Hello
-              </span>
-              <h1 class="title" style="color: #000;">
-                  I'm <span>Ravi Mittal <br></span>a Web Developer
-              </h1>
-              <p class="description" style="color: #000;">
-                  Welcome to my website design portfolio! I'm Ravi Mittal, a dedicated and imaginative Website designer with a flair for crafting visually appealing and intuitive user experiences. My journey in design has led me to work on diverse projects, from sleek mobile apps to engaging website interfaces.
-              </p>
-              <span id="element"></span>
-              <div class="buttons">
-                  <a href="mailto:exemple@gmail.com">Hire Me</a>
-                  <a href="https://www.linkedin.com/in/ravi-mittal-aggarwal">LinkedIn</a>
-
-              </div>
-        
-              
-          </div>
-          <div class="image">
-              <img src="./ravu..jpg" alt="pfp">
-          </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title> Amazing Portfolio || Web Addicted </title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__socials">
+        <a href="mailto:exemple@gmail.com"><i class="ri-mail-fill"></i></a>
+        <a href="https://github.com/Ravimittal0761"><i class="ri-github-fill"></i></a>
+        <a href="https://www.linkedin.com/in/ravi-mittal-aggarwal/"><i class="ri-linkedin-fill"></i></a>
       </div>
-  </section>
-
-  <!-- Portfolio Header-->
-  <hr>
-
-  <!-- Project Header-->
-  <section class="second-section">
-
-  <h2>Projects</h2>
-      <div class="box">
-      <div class="vertical">
-          <img  class= 'image-top' src="ravu..jpg" alt="">
-          <div class="vertical-title">
-              fOOD ORDERING WEBSITE (HTML CSS JS PHP)
-          </div>
-          <div class="vertical-desc">
-              Created a Website to add menu , price and customer detail to take the order.
-  Improved the checkout process to ensure that customers purchase products easily 
-      </div>
-      </div>
-      <div class="vertical">
-          <img  class= 'image-top' src="ravu.jpg" alt="">
-          <div class="vertical-title">
-            PERSONAL PORTFOLIO(HTML,CSS,
-            Javascript
-            )
-          </div>
-          <div class="vertical-desc">
-              Technology: Creating personal portfolio to add my details what I was do that in education.
-              Learning outcome: Creating Website base on user wants using the technology of Development
-      </div>
-      </div>
-      <div class="vertical">
-          <img  class= 'image-top' src="ravu.jpg" alt="">
-          <div class="vertical-title">
-              Python:world cup Application
-          </div>
-          <div class="vertical-desc">
-              I developed a World Cup application where users can enter a country to view its players.
-               Players' scores display innings and run rates.
-      </div>
-      </div>
-      <div class="vertical">
-          <img  class= 'image-top' src="ravu.jpg" alt="">
-          <div class="vertical-title">
-             dynamic form(html,css
-             javascript,php)
-          </div>
-          <div class="vertical-desc">
-              Created a dynamic form to enter user details name , age , phone ,email and submit to in database to show details who one enter the details.
-  
-  
-      </div>
-      </div>
-      <div class="vertical">
-          <img  class= 'image-top' src="ravu.jpg" alt="">
-          <div class="vertical-title">
-             GYM WEBSITE
-          </div>
-          <div class="vertical-desc">
-            This line emphasizes the modern and responsive design of the gym website, leveraging Tailwind CSS for a standout user experience.
-      </div>
-      </div>
-      
-  </div>
-  </section>
-  
-  </main>
-
-  
-
-  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-
-  <script>
-  
-  var typed = new Typed('#element', {
-    strings: ['Web Developer', 'App Developer','Wordpress Developer','Php Developer','Python Developer'],
-    typeSpeed: 50,
-  });
-  
-  const btn= document.getElementById("btn")
-  btn.addEventListener("click", () => {
-      document.querySelector("header ul").classList.toggle("show")
-  })
-  </script>
- 
-  <hr>
-  
-  <!-- Project Header-->
-  <hr>
-  <!-- Project image Header-->
-<section>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewpot" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-</head>
-
- 
-<section class="text-gray-600 body-font">
-    <div class="container px-5 py-24 mx-auto flex flex-wrap">
-      <div class="flex w-full mb-20 flex-wrap">
-        <h1 style="color: #000; ">Projects</h1>
-        <p class="lg:pl-6 lg:w-2/3 mx-auto leading-relaxed text-base"> </p>
-      </div>
-      <div class="flex flex-wrap md:-m-2 -m-1">
-        <div class="flex flex-wrap w-1/2">
-          <div class="md:p-2 p-1 w-1/2">
-            <img alt="gallery" class="w-full object-cover h-full object-center block" src="gym.jpeg">
-          </div>
-          <div class="md:p-2 p-1 w-1/2">
-            <img alt="gallery" class="w-full object-cover h-full object-center block" src="sh.png">
-          </div>
-          <div class="md:p-2 p-1 w-full">
-            <img alt="gallery" class="w-full h-full object-cover object-center block" src="form.png">
-          </div>
-        </div>
-        <div class="flex flex-wrap w-1/2">
-          <div class="md:p-2 p-1 w-full">
-            <img alt="gallery" class="w-full h-full object-cover object-center block" src="pizaaa.jpeg">
-          </div>
-          <div class="md:p-2 p-1 w-1/2">
-            <img alt="gallery" class="w-full object-cover h-full object-center block" src="room.png">
-          </div>
-          <div class="md:p-2 p-1 w-1/2">
-            <img alt="gallery" class="w-full object-cover h-full object-center block" src="food.png">
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-</section>
-  <!-- Project image Header-->
-  <section>
-    <head>
-        <h1 style="text-align: center; text-transform: uppercase; background-color: #000;">Skills</h1>
-        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-        
-    </head>
-   
-      
-        <div class="container">
-            <div class="row">
-                <div class="col-6 col-md-4 col-lg-3 mb-4">
-                    <div class="card text-center bg-dark text-white">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React Logo" class="card-img-top mx-auto">
-                        <div class="card-body">
-                            <h2 class="card-title">React</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-3 mb-4">
-                    <div class="card text-center bg-dark text-white">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML Logo" class="card-img-top mx-auto">
-                        <div class="card-body">
-                            <h2 class="card-title">HTML</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-3 mb-4">
-                    <div class="card text-center bg-dark text-white">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS Logo" class="card-img-top mx-auto">
-                        <div class="card-body">
-                            <h2 class="card-title">CSS</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-3 mb-4">
-                    <div class="card text-center bg-dark text-white">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript Logo" class="card-img-top mx-auto">
-                        <div class="card-body">
-                            <h2 class="card-title">JavaScript</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-3 mb-4">
-                    <div class="card text-center bg-dark text-white">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Angular_full_color_logo.svg" alt="Angular Logo" class="card-img-top mx-auto">
-                        <div class="card-body">
-                            <h2 class="card-title">Angular</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-3 mb-4">
-                    <div class="card text-center bg-dark text-white">
-                        <img src="php.jpeg" alt="PHP Logo" class="card-img-top mx-auto">
-                        <div class="card-body">
-                            <h2 class="card-title">PHP</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-3 mb-4">
-                    <div class="card text-center bg-dark text-white">
-                        <img src="ionc.png" alt="Ionic Logo" class="card-img-top mx-auto">
-                        <div class="card-body">
-                            <h2 class="card-title">Ionic</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-3 mb-4">
-                    <div class="card text-center bg-dark text-white">
-                        <img src="native.jpeg" alt="Native Script Logo" class="card-img-top mx-auto">
-                        <div class="card-body">
-                            <h2 class="card-title">Native Script</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-3 mb-4">
-                    <div class="card text-center bg-dark text-white">
-                        <img src="c.png" alt="C Logo" class="card-img-top mx-auto">
-                        <div class="card-body">
-                            <h2 class="card-title">C</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-3 mb-4">
-                    <div class="card text-center bg-dark text-white">
-                        <img src="c++.png" alt="C++ Logo" class="card-img-top mx-auto">
-                        <div class="card-body">
-                            <h2 class="card-title">C++</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-3 mb-4">
-                    <div class="card text-center bg-dark text-white">
-                        <img src="dsa.png" alt="DSA Logo" class="card-img-top mx-auto">
-                        <div class="card-body">
-                            <h2 class="card-title">DSA</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-3 mb-4">
-                    <div class="card text-center bg-dark text-white">
-                        <img src="react native.png" alt="React Native Logo" class="card-img-top mx-auto">
-                        <div class="card-body">
-                            <h2 class="card-title">React Native</h2>
-                        </div>
-                    </div>
-                </div>
+      <nav>
+        <div class="nav__bar">
+          <div class="nav__header">
+            <div class="nav__logo">
+              <a href="#">Web Dev<span></span></a>
             </div>
+            <div class="nav__menu__btn" id="menu-btn">
+              <span><i class="ri-menu-3-line"></i></span>
+            </div>
+          </div>
+          <ul class="nav__links" id="nav-links">
+            <li class="link"><a href="#home">Home</a></li>
+            <li class="link"><a href="#about">About</a></li>
+            <li class="link"><a href="#project">Projects</a></li>
+            <li class="link"><a href="#service">Services</a></li>
+            <li class="link"><a href="#skill">Skills</a></li>
+            <li class="link"><a href="#blog">Blog</a></li>
+            <li class="link btn"><a href="#contact">Contact</a></li>
+          </ul>
         </div>
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  
+      </nav>
+      <div class="section__container header__container" id="home">
+        <div class="header__image">
+          <img src="ravi.jpg" alt="header" />
+        </div>
+        <div class="header__content">
+          <h4>Crafting Digital Excellence</h4>
+          <h1>Hi, I Am Web Dev. This Is My Favotite Work!</h1>
+          <p>
+            I'm a dedicated web developer with a creative flair and a penchant
+            for turning lines of code into captivating online experiences. My
+            journey in the digital realm began years ago, and I've since honed
+            my skills in front-end and back-end development.
+          </p>
+          <li class=" btn" style="text-align: center;"><a href="https://www.linkedin.com/in/ravi-mittal-aggarwal">HIRE ME</a></li>
+        </div>
+      </div>
+    </header>
+
+    <section class="section__container about__container" id="about" style="height: 60%;  ">
+      <div class="about__image">
+        <img  src="rav.jpg" alt="about" style = " height: 40%;" />
+      </div>
+      <div class="about__content">
+        <h2 class="section__header">Hi There I Web Dev</h2>
+        <p>
+          A passionate web developer with a creative flair and a knack for
+          turning visions into reality. My journey in web development began with
+          a fascination for coding and design, and it has evolved into a career
+          where I blend aesthetics with functionality.
+        </p>
+        <h4>
+          With a focus on user experience and a commitment to staying updated
+          with the latest industry trends, I'm dedicated to creating web
+          solutions that not only meet but exceed expectations.
+        </h4>
+        <div class="about__btns">
+          <a href="resume.pdf" download class="download__btn">
+            Download CV
+          </a>
+          <a href="mailto:exemple@gmail.com"><i class="ri-mail-fill"></i></a>
+          <a href="https://github.com/Ravimittal0761"><i class="ri-github-fill"></i></a>
+          <a href="https://www.linkedin.com/in/ravi-mittal-aggarwal"><i class="ri-linkedin-fill"></i></a>
+        </div>
+      </div>
     </section>
-<hr>
 
-<!--Form design-->
-<section>
-  
-    <div class="container-fluid bg-dark text-light p-5">
-        <h1 class="display-4 mb-4" style="font-family: 'Cursive', sans-serif;">hey there!</h1>
-        <p>I’m a passionate full stack developer, dedicated to creating innovative and responsive software solutions..</p>
-        <p>I am a full stack developer who leverages modern frameworks and libraries to build robust and responsive software solutions.</p>
-        <p>With expertise in modern frameworks and libraries, I build robust applications and extend my skills into mobile development with React Native and Flutter, embracing versatility and cutting-edge technology.</p>
-        <a href="https://www.linkedin.com/in/ravi-mittal-aggarwal/" class="btn btn-light mt-3">Lets 'talk</a>
+    <section class="section__container banner__container">
+      <div class="banner__card">
+        <span><i class="ri-pen-nib-line"></i></span>
+        <div>
+          <h4>Design</h4>
+          <p>
+            Our designers and content creators are committed to delivering
+            engaging digital content.
+          </p>
+        </div>
       </div>
-      </section>
+      <div class="banner__card">
+        <span><i class="ri-layout-masonry-line"></i></span>
+        <div>
+          <h4>Development</h4>
+          <p>
+            We stay at forefront of technological advancements, ensuring your
+            digital presence performant.
+          </p>
+        </div>
+      </div>
+      <div class="banner__card">
+        <span><i class="ri-checkbox-line"></i></span>
+        <div>
+          <h4>Testing & QA</h4>
+          <p>
+            We understand that your digital presence should not just look good,
+            it should deliver traffic & engagement.
+          </p>
+        </div>
+      </div>
+    </section>
 
-<hr>
-<style>
+    <section class="section__container project__container" id="project">
+      <div class="project__header">
+        <h2 class="section__header">Our Projects</h2>
+        <div class="project__nav">
+          <button
+            class="btn project__btn mixitup-control-active"
+            data-filter="all"
+          >
+            All
+          </button>
+          <button class="btn project__btn" data-filter=".web">Web Apps</button>
+          <button class="btn project__btn" data-filter=".game">Games</button>
+          <button class="btn project__btn" data-filter=".design">
+            Designs
+          </button>
+        </div>
+      </div>
+      <div class="project__grid">
+        <div class="project__card mix web">
+          <img src="ec.png" alt="project" />
+        </div>
+        <div class="project__card mix game">
+          <img src="sh.png" alt="project" />
+        </div>
+        <div class="project__card mix design">
+          <img src="form.png" alt="project" />
+        </div>
+        <div class="project__card mix web">
+          <img src="gym.jpeg" alt="project" />
+        </div>
+        <div class="project__card mix game">
+          <img src="food.png" alt="project" />
+        </div>
+        <div class="project__card mix design">
+          <img src="perss.png" alt="project" />
+        </div>
+      </div>
+    </section>
 
-</style>
-     <section class="foot"> 
+    <section class="section__container service__container" id="service">
+      <p class="section__subheader">Our Services</p>
+      <h2 class="section__header">What We Do?</h2>
+      <p class="section__description">
+        We specialize in a wide range of web development services designed to
+        transform your vision into reality.
+      </p>
+      <div class="service__grid">
+        <div class="service__card">
+          <span><i class="ri-window-fill"></i></span>
+          <h4>Website Design</h4>
+          <p>
+            We craft user-friendly interfaces that engage visitors and help you
+            achieve your online goals with minimum efforts.
+          </p>
+        </div>
+        <div class="service__card">
+          <span><i class="ri-store-line"></i></span>
+          <h4>E-commerce Solutions</h4>
+          <p>
+            We build secure, scalable, and user-centric online stores that
+            enhance the shopping experience and drive conversions.
+          </p>
+        </div>
+        <div class="service__card">
+          <span><i class="ri-smartphone-line"></i></span>
+          <h4>Mobile Development</h4>
+          <p>
+            From iOS to Android, we create apps that deliver seamless
+            performance and keep users coming back for more.
+          </p>
+        </div>
+        <div class="service__card">
+          <span><i class="ri-share-fill"></i></span>
+          <h4>Content Marketing</h4>
+          <p>
+            Our services include creating blog posts, videos, and social media
+            content that drives traffic and engagement.
+          </p>
+        </div>
+        <div class="service__card">
+          <span><i class="ri-seo-line"></i></span>
+          <h4>SEO</h4>
+          <p>
+            Our SEO strategies are tailored to your specific goals, helping you
+            reach your target audience and grow your online presence.
+          </p>
+        </div>
+        <div class="service__card">
+          <span><i class="ri-share-circle-line"></i></span>
+          <h4>Digital Marketing</h4>
+          <p>
+            From pay-per-click (PPC) advertising to social media marketing, we
+            ensure your brand stands out in the crowded digital landscape.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    
+    <section>
+      <h1 style="color:white; margin-top: 200px;" id="skill">Skills</h1>
+      <div class="grid">
+        <div class="grid-item">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React Logo">
+          <h2>React</h2>
+        </div>
+        <div class="grid-item">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML Logo">
+          <h2>HTML</h2>
+        </div>
+        <div class="grid-item">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS Logo">
+          <h2>CSS</h2>
+        </div>
+        <div class="grid-item">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript Logo">
+          <h2>JavaScript</h2>
+        </div>
+        <div class="grid-item">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Angular_full_color_logo.svg" alt="Angular Logo">
+          <h2>Angular</h2>
+        </div>
+        <div class="grid-item">
+          <img src="php.jpeg" alt="PHP Logo">
+          <h2>PHP</h2>
+        </div>
+        <div class="grid-item">
+          <img src="ionc.png" alt="Ionic Logo">
+          <h2>Ionic</h2>
+        </div>
+        <div class="grid-item">
+          <img src="native.jpeg" alt="Native Script Logo">
+          <h2>Native Script</h2>
+        </div>
+        <div class="grid-item">
+          <img src="c.png" alt="C Logo">
+          <h2>C</h2>
+        </div>
+        <div class="grid-item">
+          <img src="c++.png" alt="C++ Logo">
+          <h2>C++</h2>
+        </div>
+        <div class="grid-item">
+          <img src="dsa.png" alt="DSA Logo">
+          <h2>DSA</h2>
+        </div>
+        <div class="grid-item">
+          <img src="react native.png" alt="React Native Logo">
+          <h2>React Native</h2>
+        </div>
+      </div>
+    </section>
+    
+
+    <section class="cont" id="blog" href="#header">
+      <p class="section__subheader">Blog Posts</p>
+      <h2 class="section__header">I Love To Write Articles</h2>
+      <div class="blog__grid">
+        <div class="blog__card">
+          <img src="blog.png" alt="blog" />
+          <p>IT Company</p>
+          <h4>Turning Clicks into Conversions with PPC</h4>
+          <a href="#">Read More</a>
+        </div>
+        <div class="blog__card">
+          <img src="blogs.png" alt="blog" />
+          <p>Immune System</p>
+          <h4>The Ultimate Guide Immune System</h4>
+          <a href="#">Read More</a>
+        </div>
         
-           
-<footer>
-    <div class="footer-content">
-        <div class="section">
-            <h2 style="color: #000;">Connect With Me.</h2>
-            <div class="social-buttons mb-3">
-                <a style="color: #000;" href="https://www.linkedin.com/in/ravi-mittal-aggarwal/" target="_blank" class="btn btn-outline-light rounded-pill me-2">
-                    in
-                </a>
-                
-                <a href="https://github.com/Ravimittal0761" target="_blank" class="btn btn-outline-light rounded-pill">
-                    📷
-                </a>
-            </div>
-            <p style="color: #000;">ravimittal271@gmail.com</p>
-            <p style="color: #000;">+91 9812923569</p>
+      </div>
+    </section>
+
+    <section class="section__container contact__container" id="contact">
+      <p class="section__subheader">Contact Us</p>
+      <h2 class="section__header">Get In Touch</h2>
+      <form action="/" class="contact__form">
+        <div class="input__row">
+          <input type="text" placeholder="First Name" />
+          <input type="text" placeholder="Last Name" />
         </div>
-        <div class="section">
-            <h2 style="color: #000;">Let's Talk!</h2>
-            <form>
-                <input type="text" class="form-control" placeholder="Your Name" required />
-                <input type="email" class="form-control" placeholder="Your Email" required />
-                <textarea class="form-control" rows="3" placeholder="Your message" required></textarea>
-                <button type="submit" class="btn btn-light">SEND MESSAGE</button>
-            </form>
+        <input type="text" placeholder="Email" />
+        <input type="text" placeholder="Description" />
+        <button class="btn">Submit</button>
+      </form>
+    </section>
+
+    <footer class="footer">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <h5><a href="#">Andarson</a></h5>
+          <p>
+            I'm a dedicated web developer with a creative flair and a penchant
+            for turning lines of code into captivating online experiences.
+          </p>
+          <div class="footer__socials">
+            <a href="mailto:exemple@gmail.com"><i class="ri-mail-fill"></i></a>
+            <a href="https://github.com/Ravimittal0761"><i class="ri-github-fill"></i></a>
+            <a href="https://www.linkedin.com/in/ravi-mittal-aggarwal/"><i class="ri-linkedin-fill"></i></a>
+            <a href="#"><i class="ri-twitter-fill"></i></a>
+            <a href="#"><i class="ri-dribbble-line"></i></a>
+          </div>
         </div>
-    </div>
+        <div class="footer__col">
+          <h4>Services</h4>
+          <div class="footer__links">
+            <a href="#">Web Design</a>
+            <a href="#">App Design</a>
+            <a href="#">Photography</a>
+            <a href="#">Videography</a>
+            <a href="#">Web Development</a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h4>Support</h4>
+          <div class="footer__links">
+            <a href="#">Contact</a>
+            <a href="#">My Blog</a>
+            <a href="#">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2024 Web Addicted . All rights reserved.
+      </div>
     </footer>
-</section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
   </body>
-  </html>
- 
+</html>
