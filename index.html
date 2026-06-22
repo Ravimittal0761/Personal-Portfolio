@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -7,25 +7,36 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="style.css" />
-    <title> Amazing Portfolio || Web Addicted </title>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Ravi Mittal — React Native &amp; Full-Stack Developer</title>
   </head>
+
   <body>
     <header class="header">
       <div class="header__socials">
-        <a href="mailto:exemple@gmail.com"><i class="ri-mail-fill"></i></a>
-        <a href="https://github.com/Ravimittal0761"><i class="ri-github-fill"></i></a>
-        <a href="https://www.linkedin.com/in/ravi-mittal-aggarwal/"><i class="ri-linkedin-fill"></i></a>
+        <a href="mailto:ravimittal0761@gmail.com" aria-label="Email"
+          ><i class="ri-mail-fill"></i
+        ></a>
+        <a href="https://github.com/Ravimittal0761" aria-label="GitHub"
+          ><i class="ri-github-fill"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/ravi-mittal-aggarwal/"
+          aria-label="LinkedIn"
+          ><i class="ri-linkedin-fill"></i
+        ></a>
       </div>
+
       <nav>
         <div class="nav__bar">
           <div class="nav__header">
             <div class="nav__logo">
-              <a href="#">Web Dev<span></span></a>
+              <a href="#home">&lt;Ravi<span>.dev</span>/&gt;</a>
             </div>
             <div class="nav__menu__btn" id="menu-btn">
               <span><i class="ri-menu-3-line"></i></span>
@@ -37,85 +48,149 @@
             <li class="link"><a href="#project">Projects</a></li>
             <li class="link"><a href="#service">Services</a></li>
             <li class="link"><a href="#skill">Skills</a></li>
-            <li class="link"><a href="#blog">Blog</a></li>
-            <li class="link btn"><a href="#contact">Contact</a></li>
+            <li class="link"><a href="#research">Research</a></li>
+            <!-- <li class="link btn">
+              <a href="" data-modal-open>Contact Us</a>
+            </li> -->
           </ul>
         </div>
       </nav>
+
       <div class="section__container header__container" id="home">
-        <div class="header__image">
-          <img src="ravi.jpg" alt="header" />
-        </div>
         <div class="header__content">
-          <h4>Crafting Digital Excellence</h4>
-          <h1>Hi, I Am Web Dev. This Is My Favotite Work!</h1>
-          <p>
-            I'm a dedicated web developer with a creative flair and a penchant
-            for turning lines of code into captivating online experiences. My
-            journey in the digital realm began years ago, and I've since honed
-            my skills in front-end and back-end development.
+          <p class="eyebrow">
+            // available for remote internships &amp; junior roles
           </p>
-          <li class=" btn" style="text-align: center;"><a href="https://www.linkedin.com/in/ravi-mittal-aggarwal">HIRE ME</a></li>
+          <h1>
+            I build the apps people open
+            <span class="hl">every single day.</span>
+          </h1>
+          <p class="header__lede">
+            I'm Ravi Mittal Aggarwal, a React Native &amp; full-stack developer
+            who turns everyday life — finding a match, booking a haircut,
+            ordering dinner, checking a horoscope — into products people
+            actually keep on their home screen.
+          </p>
+          <div class="header__ctas">
+            <a class="btn btn--solid" href="#project">See the builds</a>
+            <a class="btn btn--ghost" href="resume.pdf" download
+              >Download résumé</a
+            >
+          </div>
+          <dl class="header__stats">
+            <div>
+              <dt>5+</dt>
+              <dd>shipped apps</dd>
+            </div>
+            <div>
+              <dt>React Native</dt>
+              <dd>primary stack</dd>
+            </div>
+            <div>
+              <dt>0–2 yrs</dt>
+              <dd>building, daily</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="header__stack" aria-hidden="true">
+          <div class="app-card app-card--matrimony" data-tilt>
+            <i class="ri-heart-2-fill"></i>
+            <h4>Matrimony</h4>
+            <p>match &amp; profile app</p>
+          </div>
+          <div class="app-card app-card--dating" data-tilt>
+            <i class="ri-chat-heart-fill"></i>
+            <h4>Dating</h4>
+            <p>swipe &amp; chat app</p>
+          </div>
+          <div class="app-card app-card--astrology" data-tilt>
+            <i class="ri-sparkling-2-fill"></i>
+            <h4>Astrology</h4>
+            <p>kundli &amp; horoscope</p>
+          </div>
+          <div class="app-card app-card--beauty" data-tilt>
+            <i class="ri-scissors-cut-fill"></i>
+            <h4>Beautician</h4>
+            <p>book-a-stylist app</p>
+          </div>
+          <div class="app-card app-card--food" data-tilt>
+            <i class="ri-restaurant-2-fill"></i>
+            <h4>Food</h4>
+            <p>ordering &amp; delivery</p>
+          </div>
         </div>
       </div>
     </header>
 
-    <section class="section__container about__container" id="about" style="height: 60%;  ">
+    <section class="section__container about__container" id="about">
       <div class="about__image">
-        <img  src="rav.jpg" alt="about" style = " height: 40%;" />
+        <img src="ravi.jpg" alt="Ravi Mittal Aggarwal" />
       </div>
       <div class="about__content">
-        <h2 class="section__header">Hi There I Web Dev</h2>
+        <p class="section__subheader">About</p>
+        <h2 class="section__header section__header--left">
+          Junior on paper, full‑stack in practice.
+        </h2>
         <p>
-          A passionate web developer with a creative flair and a knack for
-          turning visions into reality. My journey in web development began with
-          a fascination for coding and design, and it has evolved into a career
-          where I blend aesthetics with functionality.
+          I'm an entry-level React Native developer who treats every side
+          project like a real product brief: a working app, a sensible API
+          behind it, and a UI someone would actually trust. My portfolio is
+          built from apps that mirror real Indian consumer use cases —
+          matrimony, dating, astrology, beauty bookings, food delivery — because
+          that's the fastest way I know to learn product thinking, not just
+          syntax.
         </p>
         <h4>
-          With a focus on user experience and a commitment to staying updated
-          with the latest industry trends, I'm dedicated to creating web
-          solutions that not only meet but exceed expectations.
+          I'm currently looking for remote internship or junior developer roles
+          where I can keep shipping React Native and React apps, plug into real
+          backends, and grow alongside a product team.
         </h4>
         <div class="about__btns">
-          <a href="resume.pdf" download class="download__btn">
-            Download CV
-          </a>
-          <a href="mailto:exemple@gmail.com"><i class="ri-mail-fill"></i></a>
-          <a href="https://github.com/Ravimittal0761"><i class="ri-github-fill"></i></a>
-          <a href="https://www.linkedin.com/in/ravi-mittal-aggarwal"><i class="ri-linkedin-fill"></i></a>
+          <a href="resume.pdf" download class="download__btn">Download CV</a>
+          <a href="mailto:ravimittal0761@gmail.com" aria-label="Email"
+            ><i class="ri-mail-fill"></i
+          ></a>
+          <a href="https://github.com/Ravimittal0761" aria-label="GitHub"
+            ><i class="ri-github-fill"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/ravi-mittal-aggarwal"
+            aria-label="LinkedIn"
+            ><i class="ri-linkedin-fill"></i
+          ></a>
         </div>
       </div>
     </section>
 
     <section class="section__container banner__container">
       <div class="banner__card">
-        <span><i class="ri-pen-nib-line"></i></span>
+        <span><i class="ri-smartphone-line"></i></span>
         <div>
-          <h4>Design</h4>
+          <h4>App Development</h4>
           <p>
-            Our designers and content creators are committed to delivering
-            engaging digital content.
+            Cross-platform mobile apps in React Native &amp; Expo, shipped to
+            real users, not just emulators.
           </p>
         </div>
       </div>
       <div class="banner__card">
-        <span><i class="ri-layout-masonry-line"></i></span>
+        <span><i class="ri-code-s-slash-line"></i></span>
         <div>
-          <h4>Development</h4>
+          <h4>Web Development</h4>
           <p>
-            We stay at forefront of technological advancements, ensuring your
-            digital presence performant.
+            React, Next.js and clean HTML/CSS builds that hold up on every
+            screen size.
           </p>
         </div>
       </div>
       <div class="banner__card">
-        <span><i class="ri-checkbox-line"></i></span>
+        <span><i class="ri-server-line"></i></span>
         <div>
-          <h4>Testing & QA</h4>
+          <h4>Backend &amp; APIs</h4>
           <p>
-            We understand that your digital presence should not just look good,
-            it should deliver traffic & engagement.
+            Node.js, PHP and MongoDB behind a RESTful API that the front end can
+            actually rely on.
           </p>
         </div>
       </div>
@@ -123,7 +198,12 @@
 
     <section class="section__container project__container" id="project">
       <div class="project__header">
-        <h2 class="section__header">Our Projects</h2>
+        <div>
+          <p class="section__subheader">Selected Builds</p>
+          <h2 class="section__header section__header--left">
+            Five apps, five everyday moments.
+          </h2>
+        </div>
         <div class="project__nav">
           <button
             class="btn project__btn mixitup-control-active"
@@ -131,227 +211,456 @@
           >
             All
           </button>
-          <button class="btn project__btn" data-filter=".web">Web Apps</button>
-          <button class="btn project__btn" data-filter=".game">Games</button>
-          <button class="btn project__btn" data-filter=".design">
-            Designs
+          <button class="btn project__btn" data-filter=".mobile">
+            Mobile Apps
+          </button>
+          <button class="btn project__btn" data-filter=".web">
+            Web &amp; Admin
           </button>
         </div>
       </div>
+
       <div class="project__grid">
-        <div class="project__card mix web">
-          <img src="ec.png" alt="project" />
-        </div>
-        <div class="project__card mix game">
-          <img src="sh.png" alt="project" />
-        </div>
-        <div class="project__card mix design">
-          <img src="form.png" alt="project" />
-        </div>
-        <div class="project__card mix web">
-          <img src="gym.jpeg" alt="project" />
-        </div>
-        <div class="project__card mix game">
-          <img src="food.png" alt="project" />
-        </div>
-        <div class="project__card mix design">
-          <img src="perss.png" alt="project" />
-        </div>
+        <!-- <a href="#" target="_blank">
+        <article class="project__card mix mobile" data-tilt style="--accent: var(--rose)">
+          <span class="project__tag">Mobile · React Native</span>
+          <i class="ri-heart-2-fill project__icon"></i>
+          <h3>Matrimony App</h3>
+          <p>
+            Profile creation, partner-preference filters and a verified-match
+            flow built for family-first relationship search.
+          </p>
+          <ul class="project__chips">
+            <li>React Native</li>
+            <li>REST API</li>
+            <li>AsyncStorage</li>
+          </ul>
+        </article>
+</a> -->
+        <article
+          class="project__card mix mobile"
+          data-tilt
+          style="--accent: var(--coral)"
+        >
+          <span class="project__tag">Mobile · React Native</span>
+          <i class="ri-chat-heart-fill project__icon"></i>
+          <h3>Dating App</h3>
+          <p>
+            Swipe-to-match UI, real-time chat screens and profile discovery,
+            optimised for fast, one-handed use.
+          </p>
+          <ul class="project__chips">
+            <li>React Native</li>
+            <li>TypeScript</li>
+            <li>RESTful API</li>
+          </ul>
+        </article>
+        <a
+          href="https://play.google.com/store/apps/details?id=com.astrolk"
+          target="_blank"
+        >
+          <article
+            class="project__card mix mobile"
+            data-tilt
+            style="--accent: var(--indigo-accent)"
+          >
+            <span class="project__tag">Mobile · React Native</span>
+            <i class="ri-sparkling-2-fill project__icon"></i>
+            <h3>Astrology App</h3>
+            <p>
+              Kundli generation, daily horoscope cards and consultation booking,
+              wrapped in a calm, legible UI.
+            </p>
+            <ul class="project__chips">
+              <li>React Native</li>
+              <li>Expo</li>
+              <li>API Integration</li>
+            </ul>
+          </article>
+        </a>
+
+        <a
+          href="https://play.google.com/store/apps/details?id=com.madamg"
+          target="_blank"
+        >
+          <article
+            class="project__card mix mobile"
+            data-tilt
+            style="--accent: var(--mint)"
+          >
+            <span class="project__tag">Mobile · React Native</span>
+            <i class="ri-scissors-cut-fill project__icon"></i>
+            <h3>Beautician Booking App</h3>
+            <p>
+              Slot-based booking for salon &amp; home-service stylists, with
+              service catalogues and appointment reminders.
+            </p>
+            <ul class="project__chips">
+              <li>React Native</li>
+              <li>Booking Logic</li>
+              <li>Push-style Alerts</li>
+            </ul>
+          </article>
+        </a>
+        <article
+          class="project__card mix mobile"
+          data-tilt
+          style="--accent: var(--marigold)"
+        >
+          <span class="project__tag">Mobile · React Native</span>
+          <i class="ri-restaurant-2-fill project__icon"></i>
+          <h3>Food Ordering App</h3>
+          <p>
+            Menu browsing, cart management and order tracking screens built for
+            a multi-vendor delivery experience.
+          </p>
+          <ul class="project__chips">
+            <li>React Native</li>
+            <li>Cart &amp; Checkout</li>
+            <li>REST API</li>
+          </ul>
+        </article>
+        <a href="https://admissionuniverse.in/" target="_blank">
+          <article
+            class="project__card mix web"
+            data-tilt
+            style="--accent: var(--indigo-accent)"
+          >
+            <span class="project__tag">Web · Education Portal</span>
+            <i class="ri-graduation-cap-fill project__icon"></i>
+            <h3>Admission Universe — Higher Education Portal</h3>
+            <p>
+              A comprehensive admission guidance platform for students after
+              12th grade, helping them explore colleges, courses, entrance
+              exams, eligibility criteria, fee structures, and admission
+              processes across India.
+            </p>
+            <ul class="project__chips">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>PHP</li>
+            </ul>
+          </article>
+        </a>
+        <a href="https://finixresidency.com/" target="_blank">
+          <article
+            class="project__card mix web"
+            data-tilt
+            style="--accent: var(--indigo-accent)"
+          >
+            <span class="project__tag">Web · Admission Portal</span>
+            <i class="ri-building-4-fill project__icon"></i>
+            <h3>Finix Residency — Admission Portal</h3>
+            <p>
+              A web portal for managing residency/hostel admission enquiries:
+              lead capture forms, seat availability and an admin dashboard for
+              follow-ups.
+            </p>
+            <ul class="project__chips">
+              <li>React JS</li>
+              <li>Node.js</li>
+              <li>MongoDB</li>
+            </ul>
+          </article>
+        </a>
       </div>
     </section>
 
     <section class="section__container service__container" id="service">
-      <p class="section__subheader">Our Services</p>
-      <h2 class="section__header">What We Do?</h2>
+      <p class="section__subheader">What I Build With</p>
+      <h2 class="section__header">Front end, back end, in between.</h2>
       <p class="section__description">
-        We specialize in a wide range of web development services designed to
-        transform your vision into reality.
+        I work across the stack — from the screen someone taps, through the API
+        that answers it, to the database that remembers it.
       </p>
       <div class="service__grid">
         <div class="service__card">
-          <span><i class="ri-window-fill"></i></span>
-          <h4>Website Design</h4>
-          <p>
-            We craft user-friendly interfaces that engage visitors and help you
-            achieve your online goals with minimum efforts.
-          </p>
-        </div>
-        <div class="service__card">
-          <span><i class="ri-store-line"></i></span>
-          <h4>E-commerce Solutions</h4>
-          <p>
-            We build secure, scalable, and user-centric online stores that
-            enhance the shopping experience and drive conversions.
-          </p>
-        </div>
-        <div class="service__card">
           <span><i class="ri-smartphone-line"></i></span>
-          <h4>Mobile Development</h4>
+          <h4>Mobile Apps</h4>
           <p>
-            From iOS to Android, we create apps that deliver seamless
-            performance and keep users coming back for more.
+            React Native &amp; Expo apps with smooth navigation, local storage
+            and production-ready UI polish.
           </p>
         </div>
         <div class="service__card">
-          <span><i class="ri-share-fill"></i></span>
-          <h4>Content Marketing</h4>
+          <span><i class="ri-window-fill"></i></span>
+          <h4>Web Interfaces</h4>
           <p>
-            Our services include creating blog posts, videos, and social media
-            content that drives traffic and engagement.
+            Responsive React &amp; Next.js front ends, styled with Tailwind or
+            Bootstrap depending on the brief.
           </p>
         </div>
         <div class="service__card">
-          <span><i class="ri-seo-line"></i></span>
-          <h4>SEO</h4>
+          <span><i class="ri-server-line"></i></span>
+          <h4>APIs &amp; Backend</h4>
           <p>
-            Our SEO strategies are tailored to your specific goals, helping you
-            reach your target audience and grow your online presence.
+            RESTful APIs in Node.js or PHP, with MongoDB for flexible,
+            app-shaped data.
           </p>
         </div>
         <div class="service__card">
-          <span><i class="ri-share-circle-line"></i></span>
-          <h4>Digital Marketing</h4>
+          <span><i class="ri-dashboard-3-line"></i></span>
+          <h4>Admin Dashboards</h4>
           <p>
-            From pay-per-click (PPC) advertising to social media marketing, we
-            ensure your brand stands out in the crowded digital landscape.
+            Internal tools for managing bookings, leads and content — the
+            unglamorous half of every app that actually keeps it running.
+          </p>
+        </div>
+        <div class="service__card">
+          <span><i class="ri-git-branch-line"></i></span>
+          <h4>Version Control</h4>
+          <p>
+            Git/GitHub workflows, clean commits and a codebase a teammate could
+            pick up without a walkthrough.
+          </p>
+        </div>
+        <div class="service__card">
+          <span><i class="ri-puzzle-line"></i></span>
+          <h4>Quick Learner</h4>
+          <p>
+            Comfortable picking up a new internal tool, design system or library
+            on the job — I've done it across five different app domains already.
           </p>
         </div>
       </div>
     </section>
 
-    
-    <section>
-      <h1 style="color:white; margin-top: 200px;" id="skill">Skills</h1>
+    <section id="skill" class="skill__section">
+      <p class="section__subheader">Tech Stack</p>
+      <h2 class="section__header">Tools I reach for.</h2>
       <div class="grid">
-        <div class="grid-item">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React Logo">
-          <h2>React</h2>
-        </div>
-        <div class="grid-item">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML Logo">
-          <h2>HTML</h2>
-        </div>
-        <div class="grid-item">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS Logo">
-          <h2>CSS</h2>
-        </div>
-        <div class="grid-item">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript Logo">
-          <h2>JavaScript</h2>
-        </div>
-        <div class="grid-item">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Angular_full_color_logo.svg" alt="Angular Logo">
-          <h2>Angular</h2>
-        </div>
-        <div class="grid-item">
-          <img src="php.jpeg" alt="PHP Logo">
-          <h2>PHP</h2>
-        </div>
-        <div class="grid-item">
-          <img src="ionc.png" alt="Ionic Logo">
-          <h2>Ionic</h2>
-        </div>
-        <div class="grid-item">
-          <img src="native.jpeg" alt="Native Script Logo">
-          <h2>Native Script</h2>
-        </div>
-        <div class="grid-item">
-          <img src="c.png" alt="C Logo">
-          <h2>C</h2>
-        </div>
-        <div class="grid-item">
-          <img src="c++.png" alt="C++ Logo">
-          <h2>C++</h2>
-        </div>
-        <div class="grid-item">
-          <img src="dsa.png" alt="DSA Logo">
-          <h2>DSA</h2>
-        </div>
-        <div class="grid-item">
-          <img src="react native.png" alt="React Native Logo">
+        <div class="grid-item" data-tilt>
+          <i class="ri-smartphone-line"></i>
           <h2>React Native</h2>
         </div>
+        <div class="grid-item" data-tilt>
+          <i class="ri-cpu-line"></i>
+          <h2>React JS</h2>
+        </div>
+        <div class="grid-item" data-tilt>
+          <i class="ri-arrow-right-double-line"></i>
+          <h2>Next.js</h2>
+        </div>
+        <div class="grid-item" data-tilt>
+          <i class="ri-code-line"></i>
+          <h2>HTML5</h2>
+        </div>
+        <div class="grid-item" data-tilt>
+          <i class="ri-palette-line"></i>
+          <h2>CSS3</h2>
+        </div>
+        <div class="grid-item" data-tilt>
+          <i class="ri-braces-line"></i>
+          <h2>JavaScript</h2>
+        </div>
+        <div class="grid-item" data-tilt>
+          <i class="ri-code-s-slash-line"></i>
+          <h2>TypeScript</h2>
+        </div>
+        <div class="grid-item" data-tilt>
+          <i class="ri-layout-3-line"></i>
+          <h2>Bootstrap</h2>
+        </div>
+        <div class="grid-item" data-tilt>
+          <i class="ri-wind-line"></i>
+          <h2>Tailwind CSS</h2>
+        </div>
+        <div class="grid-item" data-tilt>
+          <i class="ri-server-line"></i>
+          <h2>Node.js</h2>
+        </div>
+        <div class="grid-item" data-tilt>
+          <i class="ri-terminal-box-line"></i>
+          <h2>PHP</h2>
+        </div>
+        <div class="grid-item" data-tilt>
+          <i class="ri-leaf-line"></i>
+          <h2>MongoDB</h2>
+        </div>
+        <div class="grid-item" data-tilt>
+          <i class="ri-exchange-line"></i>
+          <h2>RESTful APIs</h2>
+        </div>
+        <div class="grid-item" data-tilt>
+          <i class="ri-git-branch-line"></i>
+          <h2>Git &amp; GitHub</h2>
+        </div>
       </div>
     </section>
-    
 
-    <section class="cont" id="blog" href="#header">
-      <p class="section__subheader">Blog Posts</p>
-      <h2 class="section__header">I Love To Write Articles</h2>
+    <section class="section__container research__container" id="research">
+      <p class="section__subheader">Beyond the Codebase</p>
+      <h2 class="section__header section__header--left">Research</h2>
+      <div class="research__card">
+        <span class="research__icon"><i class="ri-flashlight-fill"></i></span>
+        <div>
+          <h4>Magnetic Propulsion for Urban Mobility — A Concept Study</h4>
+          <p>
+            A research paper exploring magnetic-levitation and magnetic-drive
+            principles for a low-friction, electrically-driven concept car,
+            looking at how magnetic propulsion could reduce mechanical wear and
+            improve energy efficiency for short-range urban travel.
+          </p>
+          <a href="#contact" class="research__link" data-modal-open
+            >Ask me about it <i class="ri-arrow-right-up-line"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="cont" id="blog">
+      <p class="section__subheader">Writing</p>
+      <h2 class="section__header">Notes from building.</h2>
       <div class="blog__grid">
         <div class="blog__card">
           <img src="blog.png" alt="blog" />
-          <p>IT Company</p>
-          <h4>Turning Clicks into Conversions with PPC</h4>
+          <p>React Native</p>
+          <h4>What Shipping Five Apps Solo Taught Me</h4>
           <a href="#">Read More</a>
         </div>
         <div class="blog__card">
           <img src="blogs.png" alt="blog" />
-          <p>Immune System</p>
-          <h4>The Ultimate Guide Immune System</h4>
+          <p>Career</p>
+          <h4>Breaking Into a Remote Dev Role as a Fresher</h4>
           <a href="#">Read More</a>
         </div>
-        
       </div>
     </section>
 
     <section class="section__container contact__container" id="contact">
-      <p class="section__subheader">Contact Us</p>
-      <h2 class="section__header">Get In Touch</h2>
-      <form action="/" class="contact__form">
-        <div class="input__row">
-          <input type="text" placeholder="First Name" />
-          <input type="text" placeholder="Last Name" />
-        </div>
-        <input type="text" placeholder="Email" />
-        <input type="text" placeholder="Description" />
-        <button class="btn">Submit</button>
+      <p class="section__subheader">Let's Talk</p>
+      <h2 class="section__header">Hiring for a remote role? Let's talk.</h2>
+      <p class="section__description">
+        Drop your details and what you're building — I read every message and
+        reply within a day.
+      </p>
+
+      <form
+        action="https://formsubmit.co/ravimittal271@gmail.com"
+        method="POST"
+      >
+        <input
+          type="text"
+          name="name"
+          placeholder="Your Name"
+          required
+          style="
+            width: 100%;
+            padding: 16px;
+            border: none;
+            border-radius: 12px;
+            background: #ffffff;
+            font-size: 16px;
+          "
+        />
+        <input
+          type="email"
+          name="email"
+          placeholder="Your Email"
+          required
+          style="
+            width: 100%;
+            padding: 16px;
+            border: none;
+            border-radius: 12px;
+            background: #ffffff;
+            font-size: 16px;
+          "
+        />
+        <textarea
+          name="message"
+          rows="6"
+          placeholder="Tell me about your project..."
+          required
+          style="
+            width: 100%;
+            padding: 16px;
+            border: none;
+            border-radius: 12px;
+            background: #ffffff;
+            font-size: 16px;
+            resize: none;
+          "
+        ></textarea>
+        <button
+          type="submit"
+          style="
+            padding: 16px;
+            border: none;
+            border-radius: 12px;
+            background: #2563eb;
+            color: white;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+          "
+        >
+          Send Message
+        </button>
       </form>
     </section>
 
     <footer class="footer">
       <div class="section__container footer__container">
         <div class="footer__col">
-          <h5><a href="#">Andarson</a></h5>
+          <h5><a href="#home">Ravi Mittal Aggarwal</a></h5>
           <p>
-            I'm a dedicated web developer with a creative flair and a penchant
-            for turning lines of code into captivating online experiences.
+            React Native &amp; full-stack developer building mobile-first
+            products for everyday life — open to remote internships and junior
+            roles.
           </p>
           <div class="footer__socials">
-            <a href="mailto:exemple@gmail.com"><i class="ri-mail-fill"></i></a>
-            <a href="https://github.com/Ravimittal0761"><i class="ri-github-fill"></i></a>
-            <a href="https://www.linkedin.com/in/ravi-mittal-aggarwal/"><i class="ri-linkedin-fill"></i></a>
-            <a href="#"><i class="ri-twitter-fill"></i></a>
-            <a href="#"><i class="ri-dribbble-line"></i></a>
+            <a href="mailto:ravimittal0761@gmail.com"
+              ><i class="ri-mail-fill"></i
+            ></a>
+            <a href="https://github.com/Ravimittal0761"
+              ><i class="ri-github-fill"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/ravi-mittal-aggarwal/"
+              ><i class="ri-linkedin-fill"></i
+            ></a>
           </div>
         </div>
         <div class="footer__col">
-          <h4>Services</h4>
+          <h4>Builds</h4>
           <div class="footer__links">
-            <a href="#">Web Design</a>
-            <a href="#">App Design</a>
-            <a href="#">Photography</a>
-            <a href="#">Videography</a>
-            <a href="#">Web Development</a>
+            <a href="#project">Matrimony App</a>
+            <a href="#project">Dating App</a>
+            <a href="#project">Astrology App</a>
+            <a href="#project">Beautician App</a>
+            <a href="https://finixresidency.com/">Finix Residency Portal</a>
           </div>
         </div>
         <div class="footer__col">
-          <h4>Support</h4>
+          <h4>Site</h4>
           <div class="footer__links">
-            <a href="#">Contact</a>
-            <a href="#">My Blog</a>
-            <a href="#">Privacy Policy</a>
+            <a href="#skill">Tech Stack</a>
+            <a href="#research">Research</a>
+            <a href="#contact" data-modal-open>Contact</a>
           </div>
         </div>
       </div>
       <div class="footer__bar">
-        Copyright © 2024 Web Addicted . All rights reserved.
+        Copyright © 2026 Ravi Mittal Aggarwal. All rights reserved.
       </div>
     </footer>
 
+    <!-- Floating action button — opens the contact modal from anywhere -->
+    <button
+      class="fab"
+      type="button"
+      data-modal-open
+      aria-label="Open contact form"
+    >
+      <i class="ri-chat-3-fill"></i>
+      <span>Let's talk</span>
+    </button>
+
+    <!-- Contact modal -->
+ 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
   </body>
 </html>
